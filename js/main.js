@@ -60,7 +60,7 @@
     {
       about: new Layout(new Page('menu.html'), new Page('about.html')),
       home: new Layout(new Page('menu.html'), new Page('home.html')),
-      '#default': new Page('home.html'),
+      '#default': new Layout(new Page('menu.html'), new Page('home.html')),
     },
     document.querySelector('main')
   );
